@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CsharpBase\CsharpBase.csproj">
+      <Project>{3865e63f-f7d5-4d23-992d-12dce71f34b1}</Project>
+      <Name>CsharpBase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{2c4ab9c8-b281-4263-b764-36ec3e35d8b0}</Project>
       <Name>Test</Name>
