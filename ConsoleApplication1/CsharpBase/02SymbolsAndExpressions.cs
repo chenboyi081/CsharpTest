@@ -533,5 +533,60 @@ namespace CsharpBase
             //Console.WriteLine(num + 1); 
 
         }
+
+        /// <summary>
+        /// Convert转换： 万能转换.1). 做自动类型转换的时候. 2). 强制类型转换.3). 转字符串的时候.
+        /// a为0.2，null，"" 使用Double.Parse，Convert.ToDouble,Double.TryParse后的不同结果
+        /// </summary>
+        public void typeConversion04()
+        {
+            //C#中 Convert与Parse的区别：https://www.cnblogs.com/JackieWu/p/4866132.html
+
+            //string a = "0.2";
+            //string a = null;
+            string a = "";
+
+            try
+            {
+                double d1 = Double.Parse(a);
+                Console.WriteLine("d1的值为：" + d1);
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine("d1转换出错:" + err.Message);
+            }
+
+            try
+            {
+                double d2 = Convert.ToDouble(a);
+                Console.WriteLine("d2的值为：" + d2);
+
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine("d2转换出错:" + err.Message);
+
+            }
+            try
+            {
+                double d3;
+                Double.TryParse(a, out d3);
+                Console.WriteLine("d3的值为：" + d3);
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine("d3转换出错:" + err.Message);
+            }
+        }
+
+        /// <summary>
+        /// ToString() 将任意类型的数据转换为字符串.
+        /// </summary>
+        public void typeConversion05()
+        {
+            int i = 12;
+            string s = i.ToString();
+            Console.WriteLine(s);
+        }
     }
 }
