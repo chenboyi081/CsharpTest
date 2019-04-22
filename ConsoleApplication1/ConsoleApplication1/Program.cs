@@ -45,9 +45,15 @@ namespace CsharpTest
             #endregion
 
             #region 枚举类测试
-            //Test.EnumTest ET = new Test.EnumTest();
+            Test.EnumTest ET = new Test.EnumTest();
             //ET.GetDirection01();    
             //ET.GetDirection02(); 
+
+            TimeOfDay time = TimeOfDay.Afternoon;
+            ET.GetDirection03(time);
+
+            EnumTest.GetNVCFromEnumValue(typeof(TimeOfDay));        //从枚举类型和它的特性读出并返回一个键值对
+
             #endregion
 
             Console.ReadKey();
