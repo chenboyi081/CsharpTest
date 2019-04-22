@@ -20,15 +20,15 @@ namespace CsharpTest
             #endregion
 
             #region 02表达式/占位符转义符等符号/类型转换
-            CsharpBase._02SymbolsAndExpressions SE = new CsharpBase._02SymbolsAndExpressions();
-            //SE.consoleReadLine();   //从控制台读取输入
-            //SE.escapeSymbol();      //字符串的转义符
-            //SE.placeholder();       //占位符
-            //SE.arithmeticExpression(); //算数表达式
-            //SE.typeConversion02(); //强制类型转换
-            //SE.typeConversion03(); //Parse转换 
-            SE.typeConversion04();  //Convert和Trypase
-            SE.typeConversion05();  //ToString
+            //CsharpBase._02SymbolsAndExpressions SE = new CsharpBase._02SymbolsAndExpressions();
+            ////SE.consoleReadLine();   //从控制台读取输入
+            ////SE.escapeSymbol();      //字符串的转义符
+            ////SE.placeholder();       //占位符
+            ////SE.arithmeticExpression(); //算数表达式
+            ////SE.typeConversion02(); //强制类型转换
+            ////SE.typeConversion03(); //Parse转换 
+            //SE.typeConversion04();  //Convert和Trypase
+            //SE.typeConversion05();  //ToString
             #endregion
 
             #region 字符串练习
@@ -44,7 +44,11 @@ namespace CsharpTest
             //ST.StringTest_RegularExpressions(); 
             #endregion
 
-
+            #region 枚举类测试
+            //Test.EnumTest ET = new Test.EnumTest();
+            //ET.GetDirection01();    
+            //ET.GetDirection02(); 
+            #endregion
 
             Console.ReadKey();
         }
