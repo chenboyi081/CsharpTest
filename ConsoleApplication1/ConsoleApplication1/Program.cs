@@ -46,8 +46,8 @@ namespace CsharpTest
 
             #region 枚举类测试
             Test.EnumTest ET = new Test.EnumTest();
-            //ET.GetDirection01();    
-            //ET.GetDirection02(); 
+            ET.GetDirection01();
+            ET.GetDirection02();
 
             TimeOfDay time = TimeOfDay.Afternoon;
             ET.GetDirection03(time);
