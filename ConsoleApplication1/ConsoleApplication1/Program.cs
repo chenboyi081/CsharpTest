@@ -56,9 +56,13 @@ namespace CsharpTest
 
             #endregion
 
-            Test.NPOI.MonthlySalaryReport msr = new Test.NPOI.MonthlySalaryReport();
-            msr.ExportMonthSalaryReport();
+            #region NPOI练习
+            //Test.NPOI.MonthlySalaryReport msr = new Test.NPOI.MonthlySalaryReport();
+            //msr.ExportMonthSalaryReport(); 
+            #endregion
 
+            Test.类型转换.DecimalChange dc = new Test.类型转换.DecimalChange();
+            dc.DecimalToString();
             Console.ReadKey();
         }
 
