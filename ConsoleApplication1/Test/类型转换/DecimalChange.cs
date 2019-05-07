@@ -25,6 +25,9 @@ namespace Test.类型转换
             decimal bb = Convert.ToDecimal(aa);
             Console.WriteLine(bb.ToString("N5"));
 
+            decimal bb2 = Convert.ToDecimal(aa);
+            Console.WriteLine(bb2.ToString("n"));
+
         }
     }
 }

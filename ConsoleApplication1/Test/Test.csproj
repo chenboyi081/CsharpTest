@@ -66,6 +66,7 @@
     <Compile Include="nullable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringTest.cs" />
+    <Compile Include="类型转换\DateTimeChange.cs" />
     <Compile Include="类型转换\DecimalChange.cs" />
   </ItemGroup>
   <ItemGroup>

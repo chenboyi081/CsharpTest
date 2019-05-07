@@ -61,8 +61,10 @@ namespace CsharpTest
             //msr.ExportMonthSalaryReport(); 
             #endregion
 
-            Test.类型转换.DecimalChange dc = new Test.类型转换.DecimalChange();
-            dc.DecimalToString();
+            //Test.类型转换.DecimalChange dc = new Test.类型转换.DecimalChange();
+            //dc.DecimalToString();
+            Test.类型转换.DateTimeChange dtc = new Test.类型转换.DateTimeChange();
+            dtc.DateTimeToString();
             Console.ReadKey();
         }
 
