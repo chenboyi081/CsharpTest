@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMapperTest.cs" />
     <Compile Include="EnumTest.cs" />
     <Compile Include="nullable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

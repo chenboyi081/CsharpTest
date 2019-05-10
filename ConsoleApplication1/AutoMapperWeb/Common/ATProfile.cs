@@ -15,7 +15,7 @@ namespace AutoMapperWeb.Common
 
             //映射关系配置
 
-            CreateMap<ProductEntity, ProductDTO>();
+            CreateMap<ProductEntity, Models.Dto.ProductDTO>();
             CreateMap<Book, BookViewModel>().ForMember(t => t.Author, s => s.MapFrom(u => u.Author.Name));
 
         }

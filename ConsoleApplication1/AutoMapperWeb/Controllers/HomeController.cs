@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapperWeb.Common;
 using AutoMapperWeb.Models;
+using AutoMapperWeb.Models.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,12 +46,12 @@ namespace AutoMapperWeb.Controllers
 
             ViewBag.Tips = "3、使用Profie配置实现映射关系";
 
-            var configuration = new MapperConfiguration(cfg => cfg.AddProfile<ATProfile>());
+            //var configuration = new MapperConfiguration(cfg => cfg.AddProfile<ATProfile>());        //使用了AutoMapperConfiguration之后就不用这一句了
+            //var bookviewmodel = configuration.CreateMapper().Map<BookViewModel>(book);
 
-            var productDTO = configuration.CreateMapper().Map<ProductDTO>(productEntity);
+            var productDTO = Mapper.Map<ProductDTO>(productEntity);
 
-            var bookviewmodel = configuration.CreateMapper().Map<BookViewModel>(book);
-
+            var bookviewmodel = Mapper.Map<BookViewModel>(book);
             //return View(productDTO);
             return View(bookviewmodel);
 
@@ -69,6 +70,20 @@ namespace AutoMapperWeb.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult AutoMappeTemp1()
+        {
+            ViewBag.Tips = "1、扁平化映射（Flattening）";
+            //默认情况下，我们的Source类和Destination类是根据属性名称进行匹配映射的。
+            //除此之外，默认的映射规则还有下面两种情况，我们称之为扁平化映射，即当Source类中不包含Destination类中的属性的时候，AutoMapper会将Destination类中的属性进行分割，或匹配“Get”开头的方法
+
+
+            //我们在进行映射的时候，不需要进行特殊的配置，既可以完成从Order到OrderDto的映射。
+            Customer customer = new Customer() { Name = "Tom" };
+            Order order = new Order() { Customer = customer };
+            OrderDto orderDto = Mapper.Map<OrderDto>(order);
+            return View(orderDto);
         }
     }
 }
