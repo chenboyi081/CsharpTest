@@ -57,7 +57,7 @@ namespace CsharpTest
             #endregion
 
             #region NPOI练习
-            //Test.NPOI.MonthlySalaryReport msr = new Test.NPOI.MonthlySalaryReport();
+            //NPOI_Test.NPOI.MonthlySalaryReport msr = new Test.NPOI.MonthlySalaryReport();
             //msr.ExportMonthSalaryReport(); 
             #endregion
 

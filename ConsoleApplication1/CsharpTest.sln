@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpBase", "CsharpBase\Cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapperWeb", "AutoMapperWeb\AutoMapperWeb.csproj", "{4756422F-1842-4EB0-A90A-53ED76628FA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI_Test", "NPOI_Test\NPOI_Test.csproj", "{C31EDD4A-BF68-4A41-99FE-B3420DB01785}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4756422F-1842-4EB0-A90A-53ED76628FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4756422F-1842-4EB0-A90A-53ED76628FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4756422F-1842-4EB0-A90A-53ED76628FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31EDD4A-BF68-4A41-99FE-B3420DB01785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31EDD4A-BF68-4A41-99FE-B3420DB01785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31EDD4A-BF68-4A41-99FE-B3420DB01785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31EDD4A-BF68-4A41-99FE-B3420DB01785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

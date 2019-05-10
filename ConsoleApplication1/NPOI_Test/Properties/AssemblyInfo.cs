@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("NPOITestLibray")]
+[assembly: AssemblyTitle("NPOI_Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NPOITestLibray")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCompany("WORKGROUP")]
+[assembly: AssemblyProduct("NPOI_Test")]
+[assembly: AssemblyCopyright("Copyright © WORKGROUP 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("9c6738ee-55db-4cae-8366-cf1642dd5365")]
+[assembly: Guid("c31edd4a-bf68-4a41-99fe-b3420db01785")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
