@@ -4,15 +4,45 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model  OrderDto
+@*@model  OrderDto*@
+@*@model  CalendarEventForm*@
+@*@model Destination1*@
+@model Destination5
 
 @ViewBag.Tips
 
 <ul>
+    @*1、扁平化映射（Flattening*@
+    @*<li>标题:@Model.CustomerName </li>
 
-    <li>标题:@Model.CustomerName </li>
+    <li>作者:@Model.Total </li>*@
 
-    <li>作者:@Model.Total </li>
+    @*指定映射字段（Projection）*@
+    @*<li>EventDate:@Model.EventDate </li>
+
+    <li>EventHour:@Model.EventHour </li>
+
+    <li>EventMinute:@Model.EventMinute </li>
+
+    <li>DisplayTitle:@Model.DisplayTitle </li>*@
+
+
+    @*验证配置项（Configuration Validation）*@
+    @*<li>SomeValuefff:@Model.SomeValuefff</li>*@
+
+    @*自定义解析器（Custom value resolvers）*@
+    @*<li>Total:@Model.Total</li>*@
+
+    @*自定义类型转换器（Custom type converters）*@
+    @*<li>Value1:@Model.Value1</li>
+    <li>Value1:@Model.Value2</li>*@
+
+
+    @*空值替换（Null substitution）*@
+    @*<li>Value:@Model.Value</li>*@
+
+    @*条件映射（Conditional mapping）*@
+    <li>Value:@Model.Value</li>
 
 </ul>
 

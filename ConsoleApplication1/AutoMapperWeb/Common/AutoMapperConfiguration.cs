@@ -18,7 +18,12 @@ namespace AutoMapperWeb.Common
                 cfg.AddProfile<ATProfile>();
                 //当有多个Profile的时候，我们可以这样添加：
                 //cfg.AddProfile<OtherProfile>();
-
+                cfg.AddProfile<CalendarEventProfile>();
+                cfg.AddProfile<Source1Profile>();
+                cfg.AddProfile<Source2Profile>();
+                cfg.AddProfile<Source3Profile>();
+                cfg.AddProfile<Source4Profile>();
+                cfg.AddProfile<Source5Profile>();
             });
         }
     }

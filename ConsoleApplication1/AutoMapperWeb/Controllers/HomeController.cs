@@ -74,16 +74,82 @@ namespace AutoMapperWeb.Controllers
 
         public ActionResult AutoMappeTemp1()
         {
-            ViewBag.Tips = "1、扁平化映射（Flattening）";
+            #region 1、扁平化映射（Flattening
+            //ViewBag.Tips = "1、扁平化映射（Flattening）";
             //默认情况下，我们的Source类和Destination类是根据属性名称进行匹配映射的。
             //除此之外，默认的映射规则还有下面两种情况，我们称之为扁平化映射，即当Source类中不包含Destination类中的属性的时候，AutoMapper会将Destination类中的属性进行分割，或匹配“Get”开头的方法
 
 
             //我们在进行映射的时候，不需要进行特殊的配置，既可以完成从Order到OrderDto的映射。
-            Customer customer = new Customer() { Name = "Tom" };
-            Order order = new Order() { Customer = customer };
-            OrderDto orderDto = Mapper.Map<OrderDto>(order);
-            return View(orderDto);
+            //Customer customer = new Customer() { Name = "Tom" };
+            //Order order = new Order() { Customer = customer };
+            //OrderDto orderDto = Mapper.Map<OrderDto>(order); 
+            #endregion
+
+            #region 指定映射字段（Projection）
+            //指定映射字段（Projection）
+            //ViewBag.Tips = "2、指定映射字段（Projection）";
+
+            //CalendarEvent calendarEvent = new CalendarEvent()
+            //{
+            //    Date = DateTime.Now,
+            //    Title = "Demo Event"
+            //};
+            //CalendarEventForm calendarEventForm = Mapper.Map<CalendarEventForm>(calendarEvent); 
+            #endregion
+
+
+            #region 验证配置项（Configuration Validation）
+            //ViewBag.Tips = "3、验证配置项（Configuration Validation）";
+            //Source1 s1 = new Source1()
+            //{
+            //    AnotherValue = "test",
+            //    SomeValue = 1
+            //};
+            //Mapper.Map<Destination1>(s1);
+            //Mapper.AssertConfigurationIsValid();        //以上会报错Unmapped members were found. Review the types and members below.
+            #endregion
+
+
+            #region 4、自定义解析器（Custom value resolvers）
+            //ViewBag.Tips = "4、自定义解析器（Custom value resolvers）";
+            //Source2 src = new Source2()
+            //{
+            //    Value1 = 1,
+            //    Value2 = 2
+            //};
+            //Destination2 dest = Mapper.Map<Destination2>(src); 
+            #endregion
+
+            #region 5、自定义类型转换器（Custom type converters）
+            //ViewBag.Tips = "5、自定义类型转换器（Custom type converters）";
+            //Source3 src = new Source3()
+            //{
+            //    Value1 = "110",
+            //    Value2 = "01/01/2000",
+            //    Value3 = "String"
+            //};
+
+
+            //Destination3 dest = Mapper.Map<Destination3>(src);
+
+            #endregion
+
+
+            #region 空值替换（Null substitution）
+            //ViewBag.Tips = "6、空值替换（Null substitution）";
+            //Source4 src = new Source4();
+            //Destination4 dest = Mapper.Map<Destination4>(src);
+            #endregion
+
+            #region 条件映射（Conditional mapping）
+            ViewBag.Tips = "7、条件映射（Conditional mapping）";
+            Source5 src = new Source5() { Value = 30 };         //Value如果符合条件会显示，否则会显示成0
+            Destination5 dest = Mapper.Map<Destination5>(src);
+
+            #endregion
+
+            return View(dest);
         }
     }
 }
