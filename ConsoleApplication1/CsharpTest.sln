@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapperWeb", "AutoMapper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI_Test", "NPOI_Test\NPOI_Test.csproj", "{C31EDD4A-BF68-4A41-99FE-B3420DB01785}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛型Winform", "泛型Winform\泛型Winform.csproj", "{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C31EDD4A-BF68-4A41-99FE-B3420DB01785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C31EDD4A-BF68-4A41-99FE-B3420DB01785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C31EDD4A-BF68-4A41-99FE-B3420DB01785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
