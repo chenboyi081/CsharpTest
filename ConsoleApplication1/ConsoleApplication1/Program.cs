@@ -80,14 +80,27 @@ namespace CsharpTest
             //delegate1("Liker");
 
             //3.0 既然给委托可以绑定一个方法，那么也应该有办法取消对方法的绑定，很容易想到，这个语法是“-=”：
-            GreetingDelegate delegate2 = new GreetingDelegate(DelegateTest.EnglishGreeting);
-            delegate2 += DelegateTest.ChineseGreeting;
-            DelegateTest.GreetPeople("Liker", delegate2);
-            Console.WriteLine();
+            //GreetingDelegate delegate2 = new GreetingDelegate(DelegateTest.EnglishGreeting);
+            //delegate2 += DelegateTest.ChineseGreeting;
+            //DelegateTest.GreetPeople("Liker", delegate2);
+            //Console.WriteLine();
 
-            delegate2 -= DelegateTest.EnglishGreeting;
-            DelegateTest.GreetPeople("李志中", delegate2);
+            //delegate2 -= DelegateTest.EnglishGreeting;
+            //DelegateTest.GreetPeople("李志中", delegate2);
 
+            #endregion
+
+            #region EF CodeFirst
+            DBContext.SchoolContext db = new DBContext.SchoolContext();
+            db.Database.CreateIfNotExists();
+            Model.Student stud = new Model.Student();
+            stud.StudentName = "test";
+
+            //同上
+            //Model.Student stud = new Model.Student() { StudentName = "New Student" }
+            db.Students.Add(stud);
+            db.SaveChanges();
+            Console.WriteLine("成功生成数据库和表！");
             #endregion
 
             Console.ReadKey();
