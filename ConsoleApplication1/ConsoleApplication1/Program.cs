@@ -93,13 +93,13 @@ namespace CsharpTest
             #region EF CodeFirst
             DBContext.SchoolContext db = new DBContext.SchoolContext();
             db.Database.CreateIfNotExists();
-            Model.Student stud = new Model.Student();
-            stud.StudentName = "test";
+            //Model.Student stud = new Model.Student();
+            //stud.StudentName = "test";
 
             //同上
             //Model.Student stud = new Model.Student() { StudentName = "New Student" }
-            db.Students.Add(stud);
-            db.SaveChanges();
+            //db.Students.Add(stud);
+            //db.SaveChanges();
             Console.WriteLine("成功生成数据库和表！");
             #endregion
 

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI_Test", "NPOI_Test\NPOI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛型Winform", "泛型Winform\泛型Winform.csproj", "{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "新语法", "新语法\新语法.csproj", "{20A99DBF-4D70-4A42-93D4-124AF0843317}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10E2AE6E-561B-4492-B0C4-1D0084C42C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A99DBF-4D70-4A42-93D4-124AF0843317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A99DBF-4D70-4A42-93D4-124AF0843317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A99DBF-4D70-4A42-93D4-124AF0843317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A99DBF-4D70-4A42-93D4-124AF0843317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

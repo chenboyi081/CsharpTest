@@ -42,15 +42,15 @@ namespace CsharpTest.Model
         //Foreign key for Standard
 
         public int CurrentStandardId { get; set; }
-        public int PreviousStandardId { get; set; }
 
         [ForeignKey("CurrentStandardId")]   //ForeignKey特性覆写了默认约定，我们可以把外键属性列设置成不同名称
         public Standard CurrentStandard { get; set; }
 
-        [ForeignKey("PreviousStandardId")]
-        public Standard PreviousStandard { get; set; }
 
         public Teacher Teacher { get; set; }
+
+        public virtual StudentAddress Address { get; set; }
+
     }
 
     //即使Teacher类没有被包含在context的一个DbSet中，Code-First依然会创建一个Teachers表
