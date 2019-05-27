@@ -24,6 +24,8 @@ namespace AutoMapperWeb.Common
                 cfg.AddProfile<Source3Profile>();
                 cfg.AddProfile<Source4Profile>();
                 cfg.AddProfile<Source5Profile>();
+                cfg.AddProfile<OrderLineProfile>();
+
             });
         }
     }

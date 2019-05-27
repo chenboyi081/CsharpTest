@@ -207,6 +207,8 @@
     <Compile Include="Common\ATProfile.cs" />
     <Compile Include="Common\AutoMapperConfiguration.cs" />
     <Compile Include="Common\CalendarEventProfile.cs" />
+    <Compile Include="Common\orderContext.cs" />
+    <Compile Include="Common\OrderLineProfile.cs" />
     <Compile Include="Common\Source1Profile.cs" />
     <Compile Include="Common\Source5Profile.cs" />
     <Compile Include="Common\Source4Profile.cs" />
@@ -218,6 +220,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -230,11 +233,13 @@
     <Compile Include="Models\Dto\Destination4.cs" />
     <Compile Include="Models\Dto\Destination3.cs" />
     <Compile Include="Models\Dto\Destination2.cs" />
+    <Compile Include="Models\Dto\OrderLineDTO.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Dto\OrderDto.cs" />
     <Compile Include="Models\Dto\ProductDTO.cs" />
+    <Compile Include="Models\OrderLine.cs" />
     <Compile Include="Models\ProductEntity.cs" />
     <Compile Include="Models\Source1.cs" />
     <Compile Include="Models\Source5.cs" />
