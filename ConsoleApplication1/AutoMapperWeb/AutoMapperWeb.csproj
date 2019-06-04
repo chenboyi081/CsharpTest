@@ -204,6 +204,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Models\Class2.cs" />
+    <Compile Include="Models\Class1.cs" />
     <Compile Include="Common\ATProfile.cs" />
     <Compile Include="Common\AutoMapperConfiguration.cs" />
     <Compile Include="Common\CalendarEventProfile.cs" />
@@ -263,6 +265,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
