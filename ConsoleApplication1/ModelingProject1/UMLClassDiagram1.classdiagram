@@ -1347,6 +1347,16 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="9f8ed1be-ed9f-4900-a53b-cf5fd31ca03d" name="Department" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="27685e38-ffe3-4752-938c-ac4ad675b85d" name="Lower" value="1">
+                      <elementDefinition Id="d05ce69c-f5b8-41ae-942b-e671eecea12b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a7516261-0808-4764-8100-9483eca7cc8a" name="Upper" value="1">
+                      <elementDefinition Id="72cd17f0-3fd3-415b-a69e-bd0cb275068d" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="c0b8480d-da21-4574-8a35-358d158b6894" />
                 </memberEnd>
               </associationHasOwnedEnds>
