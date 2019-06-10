@@ -77,7 +77,7 @@
           <propertyInstance
             Id="c0f6f907-6f1c-4abe-bb60-e220a7c40e0e"
             name="Alias"
-            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate|Template1" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances
           Id="bf6daab4-e0b8-4e8f-aa9b-36ff52c271dd">
@@ -91,28 +91,28 @@
           <propertyInstance
             Id="33a3e042-86f1-4820-a5bd-1d35d5ea498c"
             name="ProjectPath"
-            value="ClassTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|EnumTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|InterfaceTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|StructTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+            value="ClassTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|EnumTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|InterfaceTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|StructTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|Template1=..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances
           Id="c5d2607d-ce2b-4e61-85ca-b54c907fc63c">
           <propertyInstance
             Id="40eab100-1629-45fc-9571-5c9afa6be7b9"
             name="TargetDirectory"
-            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}|Template1=GeneratedCode\{PackageStructure}" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances
           Id="81761949-c644-4356-909a-5bd95b2549c1">
           <propertyInstance
             Id="adaf3eea-0b03-4721-844d-b2e1d5dc9a22"
             name="TargetName"
-            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}|Template1={Name}" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances
           Id="9f3ff281-6854-4fbe-9958-9cac405c4a36">
           <propertyInstance
             Id="97e53c3f-32dc-429a-ad94-9764929901b6"
             name="Overwrite"
-            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True|Template1=True" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances
           Id="db7ddd28-fc56-482e-9f34-c44447b58848">
@@ -2111,6 +2111,69 @@
       <undefinedType
         Id="f35052d7-fe6a-4845-b401-012ec42e17d0"
         name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0f418304-828d-4cdc-a241-c5b5436c8bb7"
+        LastKnownName="MyPackage"
+        LastKnownLocation="Package_1444.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="eb3c1321-6404-48e4-abe3-6b1c4b0725eb"
+        LastKnownName="FatherPackge"
+        LastKnownLocation="Package_1446.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="d2b476b8-2486-4280-94ca-beb78b46860d"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bdbcdba7-fc3e-4a29-939a-7ec87f59d9cc"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61dbdfd5-dc44-4b37-88fa-d327803873f3">
+                <propertyInstance
+                  Id="20521c5b-fdc0-454e-867c-99868bcd61ef"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c192dce6-20b9-4655-b674-c3a5c098b2e3">
+                <propertyInstance
+                  Id="741c6f08-c774-473a-aaff-ee486a918472"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12a8809f-bf1c-411e-82a6-bdca19c8b6a4">
+                <propertyInstance
+                  Id="08e32bb7-2be1-468f-a345-d1f52492e53c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="53a64605-dcfc-445f-b11f-9b1796023ebc"
+            name="冬" />
+          <enumerationLiteral
+            Id="ace599bc-f029-4390-b0f9-131b248922b2"
+            name="下" />
+          <enumerationLiteral
+            Id="2a43d285-d31a-4810-8506-b388ae190fd3"
+            name="春天" />
+          <enumerationLiteral
+            Id="49292655-1518-48ff-b7f1-0ad073c43b43"
+            name="好" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -47,8 +47,11 @@
     <Compile Include="GeneratedCode\Computer.cs" />
     <Compile Include="GeneratedCode\Department.cs" />
     <Compile Include="GeneratedCode\Employee.cs" />
+    <Compile Include="GeneratedCode\Enumeration1.cs" />
+    <Compile Include="GeneratedCode\FatherPackge\SonPackge\TestClass.cs" />
     <Compile Include="GeneratedCode\Interface1.cs" />
     <Compile Include="GeneratedCode\Motor.cs" />
+    <Compile Include="GeneratedCode\MyPackage\Class1.cs" />
     <Compile Include="GeneratedCode\Programmer.cs" />
     <Compile Include="GeneratedCode\Tiger.cs" />
     <Compile Include="GeneratedCode\Tree.cs" />
