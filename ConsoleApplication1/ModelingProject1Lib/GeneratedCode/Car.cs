@@ -11,18 +11,6 @@ using System.Text;
 
 public class Car
 {
-	public virtual object Motor
-	{
-		get;
-		set;
-	}
-
-	public virtual object Tyre
-	{
-		get;
-		set;
-	}
-
 	public virtual Motor Motor
 	{
 		get;

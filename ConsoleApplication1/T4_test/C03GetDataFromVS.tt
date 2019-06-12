@@ -1,0 +1,22 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>  
+<#@ output extension=".txt" #>  
+<#@ assembly name="EnvDTE" #>  
+<#  
+  IServiceProvider serviceProvider = (IServiceProvider)this.Host;  
+   if (serviceProvider == null)
+        throw new Exception("Host property returned unexpected value (null)");
+
+  EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetService(typeof(EnvDTE.DTE));  
+  if (dte == null)
+        throw new Exception("Unable to retrieve EnvDTE.DTE");
+
+  Array activeSolutionProjects = (Array)dte.ActiveSolutionProjects;
+    if (activeSolutionProjects == null)
+        throw new Exception("DTE.ActiveSolutionProjects returned null");
+
+   EnvDTE.Project dteProject = (EnvDTE.Project)activeSolutionProjects.GetValue(0);
+    if (dteProject == null)
+        throw new Exception("DTE.ActiveSolutionProjects[0] returned null");
+#>  
+  
+Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #> 
