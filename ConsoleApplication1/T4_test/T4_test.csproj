@@ -70,6 +70,12 @@
       <DependentUpon>C04GenratorTestFromXML.tt</DependentUpon>
     </Compile>
     <Compile Include="C04CodeGeneratorTest.cs" />
+    <Compile Include="C05RuntimeTextTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>C05RuntimeTextTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C05RuntimeTextTemplate2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="C01genratorClass.cs">
@@ -103,6 +109,11 @@
     <Content Include="C04GenratorTestFromXML.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>C04GenratorTestFromXML.cs</LastGenOutput>
+    </Content>
+    <Content Include="C05RuntimeTextTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>C05RuntimeTextTemplate.cs</LastGenOutput>
+      <CustomToolNamespace>PAGE</CustomToolNamespace>
     </Content>
     <Content Include="exampleXml.xml" />
     <Content Include="helloworld.tt">

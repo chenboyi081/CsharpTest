@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EnvDTE;
+using PAGE;
 
 namespace T4_test
 {
@@ -11,9 +12,20 @@ namespace T4_test
     {
         static void Main(string[] args)
         {
-            new C04CodeGeneratorTest().TestMethod();
-            // Allow user to see the output:  
-            Console.ReadLine();
+            #region C05RuntimeTextTemplate 运行时文字模板
+            List<MyData> list = new List<MyData>() { new MyData { Value =1,Name="春天在哪里啊？"}, new MyData { Value = 2, Name = "好一朵美丽的茉莉花！" } };
+            C05RuntimeTextTemplate rtt = new C05RuntimeTextTemplate(list);
+            string rrtContent = rtt.TransformText();
+            System.IO.File.WriteAllText("ouputPage.html", rrtContent); 
+            #endregion
+
+            #region C04CodeGeneratorTest 生成类从XML中
+            //new C04CodeGeneratorTest().TestMethod();
+            //// Allow user to see the output:  
+            //Console.ReadLine(); 
+            #endregion
+
+            Console.ReadKey();
         }
     }
 }

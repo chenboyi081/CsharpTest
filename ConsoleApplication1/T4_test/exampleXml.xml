@@ -7,4 +7,7 @@
   <artist id ="Euan%20Garden" name="Euan Garden">
     <song id ="GardenScottishCountry">Scottish Country Garden</song>
   </artist>
+  <test>
+    <subtest id="testproper">自定义测试</subtest>
+  </test>
 </catalog>

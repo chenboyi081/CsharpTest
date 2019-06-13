@@ -20,6 +20,14 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
 				 }
 		}  
   
+		public IEnumerable<Test>Test 
+		{         
+			get {           
+				 foreach (XmlNode node in thisNode.SelectNodes("test"))              
+				 yield return new Test(node);       
+				 }
+		}  
+  
    }   
   
     partial class Artist  
@@ -50,6 +58,38 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
     {      
 		private XmlNode thisNode;      
 		public Song(XmlNode node) { thisNode = node; }  
+  
+  
+      public string Text{ 
+	  get { return thisNode.InnerText; } 
+	  }  
+  
+		public string id { 
+			get { return thisNode.Attributes["id"].Value; } 
+		}  
+  
+   }   
+  
+    partial class Test  
+    {      
+		private XmlNode thisNode;      
+		public Test(XmlNode node) { thisNode = node; }  
+  
+  
+		public IEnumerable<Subtest>Subtest 
+		{         
+			get {           
+				 foreach (XmlNode node in thisNode.SelectNodes("subtest"))              
+				 yield return new Subtest(node);       
+				 }
+		}  
+  
+   }   
+  
+    partial class Subtest  
+    {      
+		private XmlNode thisNode;      
+		public Subtest(XmlNode node) { thisNode = node; }  
   
   
       public string Text{ 
