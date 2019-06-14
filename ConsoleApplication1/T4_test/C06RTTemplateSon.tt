@@ -1,0 +1,26 @@
+﻿<#@ template language="C#" inherits="C06RTTemplateFather"#>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+<#   
+  // Set the base template properties:  
+  base.Description = "Description for this C06RTTemplateSon class";   
+  
+  // Run the base template:  
+  base.TransformText();  
+  
+#>  
+End material for DerivedTemplate1.  
+  
+<#+  
+// Provide a fragment specific to this derived template:  
+  
+protected override void SpecificFragment(int n)  
+{  
+#>  
+   Specific to DerivedTemplate1 : <#= n #>  
+<#+  
+}  
+#>
