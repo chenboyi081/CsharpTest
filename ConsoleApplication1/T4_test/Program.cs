@@ -12,10 +12,11 @@ namespace T4_test
     {
         static void Main(string[] args)
         {
+
             #region C06  运行时文本模板-继承模式
-            C06RTTemplateSon t1 = new C06RTTemplateSon();
-            string result = t1.TransformText();
-            Console.WriteLine(result); 
+            //C06RTTemplateSon t1 = new C06RTTemplateSon();
+            //string result = t1.TransformText();
+            //Console.WriteLine(result); 
             #endregion
 
             #region C05RuntimeTextTemplate 运行时文字模板

@@ -47,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -132,6 +135,15 @@
     <Content Include="C06RTTemplateSon.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>C06RTTemplateSon.cs</LastGenOutput>
+    </Content>
+    <Content Include="C07Parameter.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>C07Parameter.txt</LastGenOutput>
+    </Content>
+    <Content Include="C07Parameter.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>C07Parameter.tt</DependentUpon>
     </Content>
     <Content Include="exampleXml.xml" />
     <Content Include="helloworld.tt">
