@@ -28,7 +28,7 @@
                 <propertyInstance
                   Id="d9fb95ac-2268-4930-bf25-1fdc0730430f"
                   name="IsPartial"
-                  value="false" />
+                  value="true" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
                 Id="f5580e1b-60c8-46bc-bffc-ea19743214e3">

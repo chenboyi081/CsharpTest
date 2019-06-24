@@ -58,7 +58,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -99,7 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassTemplate.t4" />
+    <None Include="ProfileClassTemplate.t4" />
     <None Include="CSharpCommentHelpers.t4" />
     <None Include="CSharpHelpers.t4" />
     <None Include="CSharpStereotypeHelpers.t4" />

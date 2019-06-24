@@ -66,37 +66,37 @@
       <elementDefinition Id="9440fc63-0268-4b95-b3c6-618d0f3b7fe4" />
       <propertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="197768df-8054-438a-aa5a-7d4b9c72c3d5">
-          <propertyInstance Id="61e75037-b72e-4793-ab02-b0d6b991c1bf" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate|Template1">
+          <propertyInstance Id="61e75037-b72e-4793-ab02-b0d6b991c1bf" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate|ProfileTemplate">
             <elementDefinition Id="c0f6f907-6f1c-4abe-bb60-e220a7c40e0e" />
           </propertyInstance>
           <elementDefinition Id="a88cdbd1-627d-4331-abd0-3a97cdf09865" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="180f7f32-146c-437f-99d9-06e3999d4e17">
-          <propertyInstance Id="8de24503-c704-4f21-8b92-185765897e8b" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4|Template1=..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\ClassTemplate2.t4">
+          <propertyInstance Id="8de24503-c704-4f21-8b92-185765897e8b" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4|ProfileTemplate=..\T4_test\ProfileClassTemplate.t4">
             <elementDefinition Id="8f4db7cb-a858-4f39-90db-80eaf8bbe79a" />
           </propertyInstance>
           <elementDefinition Id="bf6daab4-e0b8-4e8f-aa9b-36ff52c271dd" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="29d6236f-5bc3-4840-9be6-cb899b57d7ed">
-          <propertyInstance Id="a735a86f-6d2c-4740-8152-862f37a68a31" name="ProjectPath" value="ClassTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|EnumTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|InterfaceTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|StructTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|Template1=..\ModelingProject1Lib\ModelingProject1Lib.csproj">
+          <propertyInstance Id="a735a86f-6d2c-4740-8152-862f37a68a31" name="ProjectPath" value="ClassTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|EnumTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|InterfaceTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|StructTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|ProfileTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj">
             <elementDefinition Id="33a3e042-86f1-4820-a5bd-1d35d5ea498c" />
           </propertyInstance>
           <elementDefinition Id="58018d80-7b44-4214-8689-73205fa0be8f" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="6e9cb32e-bc41-4c7e-a5b5-9ef966640437">
-          <propertyInstance Id="b2c22e46-018d-4ff2-823e-9ed65dd83212" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}|Template1=GeneratedCode\{PackageStructure}">
+          <propertyInstance Id="b2c22e46-018d-4ff2-823e-9ed65dd83212" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}|ProfileTemplate=GeneratedCode\Profile">
             <elementDefinition Id="40eab100-1629-45fc-9571-5c9afa6be7b9" />
           </propertyInstance>
           <elementDefinition Id="c5d2607d-ce2b-4e61-85ca-b54c907fc63c" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="34afb6d9-f55a-4f6f-a754-8f3689187d24">
-          <propertyInstance Id="ddbe3e48-e75b-4c12-8370-6c3edad9ac13" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}|Template1={Name}">
+          <propertyInstance Id="ddbe3e48-e75b-4c12-8370-6c3edad9ac13" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}|ProfileTemplate={Name}Profile">
             <elementDefinition Id="adaf3eea-0b03-4721-844d-b2e1d5dc9a22" />
           </propertyInstance>
           <elementDefinition Id="81761949-c644-4356-909a-5bd95b2549c1" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="46248255-7c90-435d-a9e9-77798d600acf">
-          <propertyInstance Id="7fd0da1b-d689-4eba-ae7e-03c0d93172e0" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True|Template1=True">
+          <propertyInstance Id="7fd0da1b-d689-4eba-ae7e-03c0d93172e0" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True|ProfileTemplate=True">
             <elementDefinition Id="97e53c3f-32dc-429a-ad94-9764929901b6" />
           </propertyInstance>
           <elementDefinition Id="9f3ff281-6854-4fbe-9958-9cac405c4a36" />
@@ -1522,7 +1522,7 @@
                       <elementDefinition Id="9cdc95f3-a479-4f2e-910c-cdd6a99c4a10" />
                     </stereotypeInstanceHasPropertyInstances>
                     <stereotypeInstanceHasPropertyInstances Id="5e451b13-a465-424f-acb8-f4e15d71faf4">
-                      <propertyInstance Id="ca2c3941-62a6-42ff-85a9-b5015233196e" name="IsPartial" value="false">
+                      <propertyInstance Id="ca2c3941-62a6-42ff-85a9-b5015233196e" name="IsPartial" value="true">
                         <elementDefinition Id="d9fb95ac-2268-4930-bf25-1fdc0730430f" />
                       </propertyInstance>
                       <elementDefinition Id="f89a6123-cb9e-4979-a0ac-b266fed386c7" />
