@@ -13,6 +13,12 @@ namespace MyPackage
 
 	public class Class1
 	{
+		public virtual object Name
+		{
+			get;
+			set;
+		}
+
 	}
 }
 
