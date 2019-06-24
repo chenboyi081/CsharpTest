@@ -34,3 +34,7 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+//[assembly:AssemblyVersion("1.0.0.1")]   //强命名程序集一般都指定版本号
+//[assembly: AssemblyDelaySign(false)]    //是否延迟签名 false：不延迟
+//[assembly: AssemblyKeyFile("mysn.snk")]
