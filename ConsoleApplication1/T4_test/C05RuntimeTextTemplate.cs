@@ -18,7 +18,7 @@ namespace PAGE
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
+    #line 1 "C:\Users\cboii\Source\Repos\chenboyi081\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "14.0.0.0")]
     public partial class C05RuntimeTextTemplate : C05RuntimeTextTemplateBase
     {
@@ -28,10 +28,11 @@ namespace PAGE
         /// </summary>
         public virtual string TransformText()
         {
+            this.Write("  \r\n");
             this.Write("<html><body>  \r\n<h1>Sales for January</h2>  \r\n<!-- table to be inserted here --> " +
                     " \r\nThis report is Company Confidential.  \r\n<table>  \r\n");
             
-            #line 11 "C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
+            #line 13 "C:\Users\cboii\Source\Repos\chenboyi081\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
  foreach (MyData item in m_data)   
    // m_data is declared in C05RuntimeTextTemplate.cs  
    { 
@@ -40,21 +41,21 @@ namespace PAGE
             #line hidden
             this.Write("  \r\n      <tr><td> ");
             
-            #line 14 "C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
+            #line 16 "C:\Users\cboii\Source\Repos\chenboyi081\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name));
             
             #line default
             #line hidden
             this.Write(" </td>  \r\n          <td> ");
             
-            #line 15 "C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
+            #line 17 "C:\Users\cboii\Source\Repos\chenboyi081\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Value));
             
             #line default
             #line hidden
             this.Write(" </td></tr>  \r\n");
             
-            #line 16 "C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
+            #line 18 "C:\Users\cboii\Source\Repos\chenboyi081\CsharpTest\ConsoleApplication1\T4_test\C05RuntimeTextTemplate.tt"
  } // end of foreach  
 
             

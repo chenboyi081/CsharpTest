@@ -52,6 +52,7 @@
     <Compile Include="GeneratedCode\Interface1.cs" />
     <Compile Include="GeneratedCode\Motor.cs" />
     <Compile Include="GeneratedCode\MyPackage\Class1.cs" />
+    <Compile Include="GeneratedCode\Profile\Class1Profile.cs" />
     <Compile Include="GeneratedCode\Programmer.cs" />
     <Compile Include="GeneratedCode\Tiger.cs" />
     <Compile Include="GeneratedCode\Tree.cs" />
