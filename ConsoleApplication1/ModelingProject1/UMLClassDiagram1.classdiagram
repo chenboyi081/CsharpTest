@@ -1557,7 +1557,7 @@
                       <elementDefinition Id="d2268e8c-8ba3-4da2-b702-47ecf403018d" />
                       <propertyInstances>
                         <stereotypeInstanceHasPropertyInstances Id="00bf60a1-d39d-4490-a3e4-92d81c0b21e2">
-                          <propertyInstance Id="12683815-a0fd-4e94-97a2-bd0468f207d1" name="ClrAttributes">
+                          <propertyInstance Id="12683815-a0fd-4e94-97a2-bd0468f207d1" name="ClrAttributes" value="StringLength(600)">
                             <elementDefinition Id="4e15dbe5-6335-4d1f-aeb3-49ae96d8d733" />
                           </propertyInstance>
                           <elementDefinition Id="da44eb93-0f7d-423b-a0f4-d6c86ed2a50d" />

@@ -77,7 +77,8 @@
                     Id="da44eb93-0f7d-423b-a0f4-d6c86ed2a50d">
                     <propertyInstance
                       Id="4e15dbe5-6335-4d1f-aeb3-49ae96d8d733"
-                      name="ClrAttributes" />
+                      name="ClrAttributes"
+                      value="StringLength(600)" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
                     Id="7f34e9c4-5d68-416b-83c5-27f3c5bf87f5">
