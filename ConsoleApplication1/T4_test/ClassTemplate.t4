@@ -16,15 +16,15 @@
     if(!string.IsNullOrEmpty(classNamespace))
     {
 #>
-namespace Profile
+namespace <#= classNamespace #>
 {
 <#
         PushIndent("\t");
     }
 
     WriteUsingStatements(this.Element);
-    WriteLine("using AutoMapper;");
-    WriteLine("using Common;");
+    WriteLine("using System.ComponentModel.DataAnnotations;");
+    WriteLine("using System.ComponentModel.DataAnnotations.Schema;");
 	
     WriteLine("");
 #>
@@ -39,20 +39,94 @@ namespace Profile
 <#
     WriteClassClrAttributes(this.Element);
 #>
-<#= ClassVisibility(this.Element) #><#= ClassUnsafeOption(this.Element) #><#= ClassStaticOption(this.Element) #><#= ClassAbstractOption(this.Element) #><#= ClassSealedOption(this.Element) #><#= ClassPartialOption(this.Element) #>class <#= ClassifierName(this.Element) #>Profile : Profile<#= ImplementedAndInheritedList(this.Element) #><# WriteClassifierConstraintOption(this.Element); #>
+[Table("<#= ClassifierName(this.Element) #>")]
+<#= ClassVisibility(this.Element) #><#= ClassUnsafeOption(this.Element) #><#= ClassStaticOption(this.Element) #><#= ClassAbstractOption(this.Element) #><#= ClassSealedOption(this.Element) #><#= ClassPartialOption(this.Element) #>class <#= ClassifierName(this.Element) #><#= ImplementedAndInheritedList(this.Element) #><# WriteClassifierConstraintOption(this.Element); #>
 {
 <#
-	var className = ClassifierName(this.Element);
+    PushIndent("\t");
 
-	PushIndent("\t");
-	WriteLine("public " + className + @"Profile(){");
-	PushIndent("\t");
-	WriteLine(@"//映射关系配置");
-	WriteLine(@"CreateMap<" + className + "," + className + @"View>();");
-	PopIndent();
-	WriteLine("}");
-	PopIndent();
+    // Write Attributes
+    var ownedAttributes = this.Element.OwnedAttributes;
+    foreach(IProperty attribute in ownedAttributes)
+    {
 
+        WriteSummaryComment(attribute.Description);	
+		if(attribute.Name == "ID")
+		{
+			 WriteLine("[Key]"); 
+		}
+		string typeName = ElementType(attribute);
+		if(typeName == "String" || typeName == "string")
+		{
+			 WriteLine(@"[StringLength(xx)]"); 
+		}	
+        WriteClassUmlPropertyDefinition(attribute);	
+
+        WriteLine("");
+    }
+#>
+<#
+    // Write Associations
+    var navigableOwnedEnds = GetNavigableOwnedEnds(this.Element, ownedAttributes);
+    foreach(IProperty ownedEnd in navigableOwnedEnds) 
+    {
+        WriteSummaryComment(ownedEnd.OwningAssociation.Description);
+        WriteSummaryComment(ownedEnd.Description);
+        WriteClassUmlPropertyDefinition(ownedEnd);
+        WriteLine("");
+    }
+#>
+<#
+    // Write Operations
+    foreach(IOperation operation in this.Element.OwnedOperations)
+    {
+        WriteSummaryComment(operation.Description);
+        foreach (IParameter parameter in operation.OwnedParameters.Where(p => p.Direction != ParameterDirectionKind.Return))
+        {
+            WriteParameterComment(parameter.Name, parameter.Description);
+        }
+
+        if(GetStereotype(operation) == "method")
+        {
+            WriteMethodClrAttributes(operation);
+            if(IsConstructor(operation) || IsDestructor(operation))
+            {
+#>
+<#= MethodVisibility(operation) #><#= operation.Name #>(<# WriteMethodParameterList(operation); #>)
+{
+}
+<#
+            }
+            else
+            {
+#>
+<#= MethodVisibility(operation) #><#= MethodUnsafeOption(operation) #><#= OperationStaticOption(operation) #><#= ClassMethodOverloadOption(operation, this.Element) #><#= MethodPartialOption(operation) #><#= MethodType(operation) #> <#= operation.Name #>(<# WriteMethodParameterList(operation); #>)<# WriteClassMethodBody(operation); #>
+<#
+            }
+
+            WriteLine("");
+        }
+        else if(GetStereotype(operation) == "indexer") 
+        {
+            WriteIndexerClrAttributes(operation);
+#>
+<#= IndexerVisibility(operation) #><#= IndexerUnsafeOption(operation) #><#= OperationStaticOption(operation) #><#= ClassIndexerOverloadOption(operation, this.Element) #><#= IndexerType(operation) #> this[<# WriteIndexerParameterList(operation); #>]
+{
+<#
+            PushIndent("\t");
+#>
+<#= IndexerGetVisibility(operation) #>get<# WriteClassIndexerAccessorBody(operation); #>
+<#= IndexerSetVisibility(operation) #>set<# WriteClassIndexerAccessorBody(operation); #>
+<#
+            PopIndent();
+#>
+}
+<#
+            WriteLine("");
+        }
+    }
+
+    PopIndent();
 #>
 }
 <#
@@ -98,6 +172,8 @@ namespace Profile
     {
         return ClassOperationOverloadOption(operation, owner);
     }
+
+	
 
     /// <summary>
     /// Gets the overload option of the method.

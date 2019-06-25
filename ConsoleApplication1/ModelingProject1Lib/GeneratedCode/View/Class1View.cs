@@ -11,16 +11,17 @@ namespace MyPackage
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
+	using System.ComponentModel;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
 
-	[Table("Class1")]
-	public partial class Class1
+	public partial class Class1View
 	{
 		/// <summary>
 		/// 名字
 		/// </summary>
-		[StringLength(xx)]
+		[DisplayName("名字")]
+		[StringLength(xx, ErrorMessage = "名字不能超过xx个字")]
 		public virtual string Name
 		{
 			get;
@@ -30,7 +31,7 @@ namespace MyPackage
 		/// <summary>
 		/// 编号
 		/// </summary>
-		[Key]
+		[DisplayName("编号")]
 		public virtual int ID
 		{
 			get;

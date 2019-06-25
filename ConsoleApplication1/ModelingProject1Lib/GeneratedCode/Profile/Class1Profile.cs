@@ -11,19 +11,15 @@ namespace Profile
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
-	using System.ComponentModel.DataAnnotations;
-	using System.ComponentModel.DataAnnotations.Schema;
+	using AutoMapper;
+	using Common;
 
-	[Table("Error")]
-	[Name("dd")]
-	public partial class Class1Profile
+	public partial class Class1Profile : Profile
 	{
-		public virtual object Name
-		{
-			get;
-			set;
+		public Class1Profile(){
+			//映射关系配置
+			CreateMap<Class1,Class1View>();
 		}
-
 	}
 }
 

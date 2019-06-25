@@ -101,11 +101,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassViewTemplate.t4" />
+    <None Include="ClassTemplate.t4" />
+    <None Include="ProfileClassTemplate - 复制.t4" />
     <None Include="ProfileClassTemplate.t4" />
-    <None Include="CSharpCommentHelpers.t4" />
-    <None Include="CSharpHelpers.t4" />
-    <None Include="CSharpStereotypeHelpers.t4" />
-    <None Include="TemplateHeader.t4" />
+    <None Include="CommonT4\CSharpCommentHelpers.t4" />
+    <None Include="CommonT4\CSharpHelpers.t4" />
+    <None Include="CommonT4\CSharpStereotypeHelpers.t4" />
+    <None Include="CommonT4\TemplateHeader.t4" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="C02ReadFileOrOther.tt">
