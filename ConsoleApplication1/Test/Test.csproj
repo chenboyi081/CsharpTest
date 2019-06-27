@@ -56,6 +56,11 @@
     <Compile Include="nullable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringTest.cs" />
+    <Compile Include="单例模式\SingletonDemo1.cs" />
+    <Compile Include="单例模式\SingletonDemo3（单线程的单例模式）.cs" />
+    <Compile Include="单例模式\SingletonDemo2.cs" />
+    <Compile Include="单例模式\SingletonDemo4（多线程的单例模式） - 复制.cs" />
+    <Compile Include="单例模式\SingletonDemo5（多线程的单例模式改进）.cs" />
     <Compile Include="类型转换\DateTimeChange.cs" />
     <Compile Include="类型转换\DecimalChange.cs" />
   </ItemGroup>

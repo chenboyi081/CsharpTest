@@ -91,17 +91,29 @@ namespace CsharpTest
             #endregion
 
             #region EF CodeFirst
-            DBContext.SchoolContext db = new DBContext.SchoolContext();
-            db.Database.CreateIfNotExists();
-            //Model.Student stud = new Model.Student();
-            //stud.StudentName = "test";
+            //DBContext.SchoolContext db = new DBContext.SchoolContext();
+            //db.Database.CreateIfNotExists();
+            ////Model.Student stud = new Model.Student();
+            ////stud.StudentName = "test";
 
-            //同上
-            //Model.Student stud = new Model.Student() { StudentName = "New Student" }
-            //db.Students.Add(stud);
-            //db.SaveChanges();
-            Console.WriteLine("成功生成数据库和表！");
+            ////同上
+            ////Model.Student stud = new Model.Student() { StudentName = "New Student" }
+            ////db.Students.Add(stud);
+            ////db.SaveChanges();
+            //Console.WriteLine("成功生成数据库和表！");
             #endregion
+
+            //模拟多线程去实例化 仅单线程适用 的单例模式
+            TaskFactory task = new TaskFactory();
+            List<Task> lstTask = new List<Task>();
+            for (int i = 0; i < 5; i++)
+            {
+                lstTask.Add(task.StartNew(() => {
+                    //Test.单例模式.SingletonDemo3 singleton3 = Test.单例模式.SingletonDemo3.init();
+                    //Test.单例模式.SingletonDemo4 singleton4 = Test.单例模式.SingletonDemo4.init();
+                    Test.单例模式.SingletonDemo5 singleton5 = Test.单例模式.SingletonDemo5.init();
+                }));
+            }
 
             Console.ReadKey();
         }

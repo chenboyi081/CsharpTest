@@ -52,14 +52,15 @@
     <Compile Include="GeneratedCode\FatherPackge\SonPackge\TestClass.cs" />
     <Compile Include="GeneratedCode\Interface1.cs" />
     <Compile Include="GeneratedCode\Motor.cs" />
-    <Compile Include="GeneratedCode\MyPackage\Class1.cs" />
-    <Compile Include="GeneratedCode\Profile\Class1Profile.cs" />
     <Compile Include="GeneratedCode\Programmer.cs" />
     <Compile Include="GeneratedCode\Tiger.cs" />
     <Compile Include="GeneratedCode\Tree.cs" />
     <Compile Include="GeneratedCode\Tyre.cs" />
-    <Compile Include="GeneratedCode\View\Class1View.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GeneratedCode\MyPackage\" />
+    <Folder Include="GeneratedCode\View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
