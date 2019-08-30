@@ -54,9 +54,11 @@
   <ItemGroup>
     <Compile Include="DBContext\SchoolContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\role.cs" />
     <Compile Include="Model\Standard.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\StudentAddress.cs" />
+    <Compile Include="Model\user.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

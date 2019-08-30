@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="代码生成/文本转换记录">
+  <MessageClass Name="Message" Label="消息" Option="显示提供相关信息的消息" />
+  <MessageClass Name="Warning" Label="警告" Option="显示警告" />
+  <MessageClass Name="Error" Label="错误" Option="显示错误" />
+  <MessageClass Name="Property" Label="属性" Option="显示元数据" />
+  <MessageClass Name="Diagnostic" Label="消息" Option="显示诊断消息" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="High" Text="已启动代码生成或文本转换。" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Diagnostic" Text="名称 = ClassTemplate" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Diagnostic" Text="TemplateFilePath = ..\T4_test\ClassTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\ClassTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:00" Importance="Medium" Text="ModelingProject1 的文本模板绑定: “ClassTemplate”会将 ClassTemplate.t4 应用于: “ModelingProject1::user”- (Class), “ModelingProject1::role”- (Class) " />
+  <Message Timestamp="2019-07-09T14:59:28" Importance="Medium" Text="“ModelingProject1::user”- (Class) : 成功(已创建文件) - C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\ModelingProject1Lib\GeneratedCode\user.cs" />
+  <Message Timestamp="2019-07-09T14:59:30" Importance="Medium" Text="“ModelingProject1::role”- (Class) : 成功(已创建文件) - C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\ModelingProject1Lib\GeneratedCode\role.cs" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Diagnostic" Text="名称 = StructTemplate" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:31" Importance="Medium" Text="ModelingProject1 的文本模板绑定: “StructTemplate”会将 StructTemplate.t4 应用于: “ModelingProject1::user”- (Class), “ModelingProject1::role”- (Class) " />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="“ModelingProject1::user”- (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="“ModelingProject1::role”- (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="名称 = ProfileTemplate" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\Profile" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="TargetName = {Name}Profile" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="TemplateFilePath = ..\T4_test\ProfileClassTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\ProfileClassTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:32" Importance="Medium" Text="ModelingProject1 的文本模板绑定: “ProfileTemplate”会将 ProfileClassTemplate.t4 应用于: “ModelingProject1::user”- (Class), “ModelingProject1::role”- (Class) " />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Medium" Text="“ModelingProject1::user”- (Class) : 成功(已替换文件) - C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\ModelingProject1Lib\GeneratedCode\Profile\userProfile.cs" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Medium" Text="“ModelingProject1::role”- (Class) : 成功(已替换文件) - C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\ModelingProject1Lib\GeneratedCode\Profile\roleProfile.cs" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Diagnostic" Text="名称 = ViewTemplate" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\View" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Diagnostic" Text="TargetName = {Name}View" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Diagnostic" Text="TemplateFilePath = ..\T4_test\ClassViewTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\T4_test\ClassViewTemplate.t4" />
+  <Message Timestamp="2019-07-09T14:59:33" Importance="Medium" Text="ModelingProject1 的文本模板绑定: “ViewTemplate”会将 ClassViewTemplate.t4 应用于: “ModelingProject1::user”- (Class), “ModelingProject1::role”- (Class) " />
+  <Message Timestamp="2019-07-09T14:59:34" Importance="Medium" Text="“ModelingProject1::user”- (Class) : 成功(已替换文件) - C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\ModelingProject1Lib\GeneratedCode\View\userView.cs" />
+  <Message Timestamp="2019-07-09T14:59:34" Importance="Medium" Text="“ModelingProject1::role”- (Class) : 成功(已替换文件) - C:\Users\cbyi\Source\Repos\CsharpTest\ConsoleApplication1\ModelingProject1Lib\GeneratedCode\View\roleView.cs" />
+  <Message Timestamp="2019-07-09T14:59:34" Importance="Diagnostic" Text="选定内容包含未绑定到模板的 1 元素。" />
+  <Message Timestamp="2019-07-09T14:59:34" Importance="Diagnostic" Text="“ModelingProject1::”- (Association): 没有绑定的模板。" />
+  <Message Timestamp="2019-07-09T14:59:34" Importance="High" Text="代码生成完成。错误: 0。警告: 0。" />
+</Log>

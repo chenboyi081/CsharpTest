@@ -52,16 +52,48 @@
     <Compile Include="GeneratedCode\FatherPackge\SonPackge\TestClass.cs" />
     <Compile Include="GeneratedCode\Interface1.cs" />
     <Compile Include="GeneratedCode\Motor.cs" />
+    <Compile Include="GeneratedCode\MyPackage\Class1.cs" />
+    <Compile Include="GeneratedCode\Profile\AnimalProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\CarProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\Class1Profile.cs" />
+    <Compile Include="GeneratedCode\Profile\Company1Profile.cs" />
+    <Compile Include="GeneratedCode\Profile\CompanyProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\ComputerProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\DepartmentProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\EmployeeProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\MotorProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\ProgrammerProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\roleProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\TestClassProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\TigerProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\TreeProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\TyreProfile.cs" />
+    <Compile Include="GeneratedCode\Profile\userProfile.cs" />
     <Compile Include="GeneratedCode\Programmer.cs" />
+    <Compile Include="GeneratedCode\role.cs" />
     <Compile Include="GeneratedCode\Tiger.cs" />
     <Compile Include="GeneratedCode\Tree.cs" />
     <Compile Include="GeneratedCode\Tyre.cs" />
+    <Compile Include="GeneratedCode\user.cs" />
+    <Compile Include="GeneratedCode\View\AnimalView.cs" />
+    <Compile Include="GeneratedCode\View\CarView.cs" />
+    <Compile Include="GeneratedCode\View\Class1View.cs" />
+    <Compile Include="GeneratedCode\View\Company1View.cs" />
+    <Compile Include="GeneratedCode\View\CompanyView.cs" />
+    <Compile Include="GeneratedCode\View\ComputerView.cs" />
+    <Compile Include="GeneratedCode\View\DepartmentView.cs" />
+    <Compile Include="GeneratedCode\View\EmployeeView.cs" />
+    <Compile Include="GeneratedCode\View\MotorView.cs" />
+    <Compile Include="GeneratedCode\View\ProgrammerView.cs" />
+    <Compile Include="GeneratedCode\View\roleView.cs" />
+    <Compile Include="GeneratedCode\View\TestClassView.cs" />
+    <Compile Include="GeneratedCode\View\TigerView.cs" />
+    <Compile Include="GeneratedCode\View\TreeView.cs" />
+    <Compile Include="GeneratedCode\View\TyreView.cs" />
+    <Compile Include="GeneratedCode\View\userView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GeneratedCode\MyPackage\" />
-    <Folder Include="GeneratedCode\View\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

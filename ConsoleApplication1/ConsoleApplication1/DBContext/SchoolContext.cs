@@ -20,6 +20,8 @@ namespace CsharpTest.DBContext
 
         public System.Data.Entity.DbSet<Student> Students { get; set; }
         public System.Data.Entity.DbSet<Standard> Standards { get; set; }
+        public System.Data.Entity.DbSet<user> user { get; set; }
+        public System.Data.Entity.DbSet<role> role { get; set; }
 
         //Fluent API 配置是作为EF从领域类构建模型的应用，我们可以通过覆写DbContext类的OnModelCreating方法来注入配置
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
