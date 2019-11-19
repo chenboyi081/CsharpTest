@@ -482,14 +482,14 @@ namespace CsharpBase
             */
 
             //请写1个程序,让用户输入两个int类型的数 算出他们的和并打印.
-            Console.WriteLine("请输入第1个数:");
-            string strNumA = Console.ReadLine(); //"12"
-            Console.WriteLine("请输入第2个数:");
-            string strNumB = Console.ReadLine();//"20" 
-            //将用户输入的字符串内容转换为数值类型.
-            int numA = int.Parse(strNumA);
-            int numB = int.Parse(strNumB);
-            Console.WriteLine(numA + numB);
+            //Console.WriteLine("请输入第1个数:");
+            //string strNumA = Console.ReadLine(); //"12"
+            //Console.WriteLine("请输入第2个数:");
+            //string strNumB = Console.ReadLine();//"20" 
+            ////将用户输入的字符串内容转换为数值类型.
+            //int numA = int.Parse(strNumA);
+            //int numB = int.Parse(strNumB);
+            //Console.WriteLine(numA + numB);
 
             //string str = "中国";
             //int num =  int.Parse(str);
@@ -503,7 +503,7 @@ namespace CsharpBase
 
 
             //string str = "300";
-            //byte s = byte.Parse(str);
+            //byte s = byte.Parse(str);       //overflow错误
             //Console.WriteLine(s);
 
             //string str = "190.123";
@@ -513,19 +513,19 @@ namespace CsharpBase
             //byte b = 12;
             //int i = b;
 
-            //int i1 =  int.Parse(b);
+            //int i1 = int.Parse(b);
 
             //string str = "a";
-            //char c =  char.Parse(str);
-            //Console.WriteLine(c+1);
+            //char c = char.Parse(str);
+            //Console.WriteLine(c + 1);
 
             //string str = "12";
-            //byte b =  byte.Parse(str);
-            //Console.WriteLine(b+1);
+            //byte b = byte.Parse(str);
+            //Console.WriteLine(b + 1);
 
             //string str = "12.12";
-            //double d1 =  double.Parse(str);
-            //Console.WriteLine(d1+1);
+            //double d1 = double.Parse(str);
+            //Console.WriteLine(d1 + 1);
 
 
             //string str = "12";
@@ -542,9 +542,9 @@ namespace CsharpBase
         {
             //C#中 Convert与Parse的区别：https://www.cnblogs.com/JackieWu/p/4866132.html
 
-            //string a = "0.2";
+            string a = "0.2";
             //string a = null;
-            string a = "";
+            //string a = "";
 
             try
             {

@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="01VariablesandDatatypes.cs" />
     <Compile Include="02SymbolsAndExpressions.cs" />
+    <Compile Include="03Array.cs" />
+    <Compile Include="04For.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

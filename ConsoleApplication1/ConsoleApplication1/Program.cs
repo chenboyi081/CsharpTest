@@ -21,14 +21,34 @@ namespace CsharpTest
 
             #region 02表达式/占位符转义符等符号/类型转换
             //CsharpBase._02SymbolsAndExpressions SE = new CsharpBase._02SymbolsAndExpressions();
-            ////SE.consoleReadLine();   //从控制台读取输入
-            ////SE.escapeSymbol();      //字符串的转义符
-            ////SE.placeholder();       //占位符
-            ////SE.arithmeticExpression(); //算数表达式
-            ////SE.typeConversion02(); //强制类型转换
-            ////SE.typeConversion03(); //Parse转换 
+            //SE.consoleReadLine();   //从控制台读取输入
+            //SE.escapeSymbol();      //字符串的转义符
+            //SE.placeholder();       //占位符
+            //SE.arithmeticExpression(); //算数表达式
+            //SE.typeConversion02(); //强制类型转换
+            //SE.typeConversion03(); //Parse转换 
             //SE.typeConversion04();  //Convert和Trypase
             //SE.typeConversion05();  //ToString
+            #endregion
+
+            #region 04For循环的应用
+            CsharpBase._04For FR = new CsharpBase._04For();
+            //FR.SumNum();    //输入一个整数，计算从1加到这个数的结果
+            //FR.MultiplyNum();   //输入一个正整数，求阶乘
+            //FR.AddMultiNum(); //输入一个正整数，求阶乘的和1!+2!+...+ n!
+            //FR.CGuan();     //游戏闯关计分
+            //FR.GetMaxAndMin(); //求最大值和最小值
+            //FR.QiongJu();   //穷举：100元买2元的铅笔，5元的铅笔盒，10元的文件夹，15元的彩笔，刚好花光，每样物品必须有一种，一共有多少种可能性
+            //FR.GetLingX();  //用 for 循环的嵌套打印一个菱形
+            #endregion
+
+            #region 03数组
+            //CsharpBase._03Array AR = new CsharpBase._03Array();
+            //AR.ArrayApplication(); //声明、赋值、访问数组
+            //AR.ArrayMethod();   //Array类常用方法以及属性
+            //double[] arr = new double[] { 3,2,5,1,7,4,9,6};
+            //AR.SelectSort(ref arr);     //选择排序
+            //AR.BubbleArithmetic(arr,true);      //冒泡排序
             #endregion
 
             #region 字符串练习
@@ -103,17 +123,22 @@ namespace CsharpTest
             //Console.WriteLine("成功生成数据库和表！");
             #endregion
 
+            #region 模拟多线程去实例化 仅单线程适用 的单例模式
             //模拟多线程去实例化 仅单线程适用 的单例模式
-            TaskFactory task = new TaskFactory();
-            List<Task> lstTask = new List<Task>();
-            for (int i = 0; i < 5; i++)
-            {
-                lstTask.Add(task.StartNew(() => {
-                    //Test.单例模式.SingletonDemo3 singleton3 = Test.单例模式.SingletonDemo3.init();
-                    //Test.单例模式.SingletonDemo4 singleton4 = Test.单例模式.SingletonDemo4.init();
-                    Test.单例模式.SingletonDemo5 singleton5 = Test.单例模式.SingletonDemo5.init();
-                }));
-            }
+            //TaskFactory task = new TaskFactory();
+            //List<Task> lstTask = new List<Task>();
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    lstTask.Add(task.StartNew(() =>
+            //    {
+            //        //Test.单例模式.SingletonDemo3 singleton3 = Test.单例模式.SingletonDemo3.init();
+            //        //Test.单例模式.SingletonDemo4 singleton4 = Test.单例模式.SingletonDemo4.init();
+            //        Test.单例模式.SingletonDemo5 singleton5 = Test.单例模式.SingletonDemo5.init();
+            //    }));
+            //} 
+            #endregion
+
+
 
             Console.ReadKey();
         }
