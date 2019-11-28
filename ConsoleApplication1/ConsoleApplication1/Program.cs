@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,10 +8,12 @@ using Test;
 
 namespace CsharpTest
 {
+    using CsharpBase;
     class Program
     {
         static void Main(string[] args)
         {
+
             #region 01数据类型和变量
             //CsharpBase._01VariablesandDatatypes VD = new CsharpBase._01VariablesandDatatypes();
             //VD.test1();
@@ -50,6 +53,12 @@ namespace CsharpTest
             //AR.SelectSort(ref arr);     //选择排序
             //AR.BubbleArithmetic(arr,true);      //冒泡排序
             #endregion
+
+            _05Collection clc = new _05Collection();
+            //clc.ArrayListTest();      
+            //clc.HashtableTest();
+            //clc.ListTTest();
+            clc.DictionaryTTest();
 
             #region 字符串练习
             //StringTest ST = new StringTest();
