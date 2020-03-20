@@ -45,6 +45,8 @@
     <Compile Include="03Array.cs" />
     <Compile Include="04For.cs" />
     <Compile Include="05Collection.cs" />
+    <Compile Include="06RegularExpressions.cs" />
+    <Compile Include="0Static.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

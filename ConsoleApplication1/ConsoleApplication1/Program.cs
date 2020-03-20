@@ -54,11 +54,31 @@ namespace CsharpTest
             //AR.BubbleArithmetic(arr,true);      //冒泡排序
             #endregion
 
-            _05Collection clc = new _05Collection();
+            #region 05集合
+            //_05Collection clc = new _05Collection();
             //clc.ArrayListTest();      
             //clc.HashtableTest();
             //clc.ListTTest();
-            clc.DictionaryTTest();
+            //clc.DictionaryTTest(); 
+            #endregion
+
+            #region 静态类，静态成员，静态构造函数
+
+            //Console.WriteLine("out ---" + A.a);   //1
+
+            //#region 静态构造函数测试
+            ////_0Static b = new _0Static();   如果将实例化放在最前，执行顺序也是相同的（总是先初始化静态）
+            //_0Static.a = 1;
+            //Console.WriteLine("out ---" + _0Static.a + " " + _0Static.b);//1  //1
+            //_0Static b = new _0Static();
+            //b.setA();
+            //Console.WriteLine("out ---" + _0Static.a);  //3  
+            //#endregion
+            #endregion
+
+            _06RegularExpressions re = new _06RegularExpressions();
+            re.IsNumic("R1123");
+            re.IsContainNumic("R1123");
 
             #region 字符串练习
             //StringTest ST = new StringTest();
