@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C10normalDll", "C10normalDl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C10StrongNameDll", "C10StrongNameDll\C10StrongNameDll.csproj", "{C5773F33-79E1-4BB6-B208-DF1EAD57128E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutLibTest", "OutLibTest\OutLibTest.csproj", "{5323A28A-2D56-412E-874B-EE0E4FE34BCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{C5773F33-79E1-4BB6-B208-DF1EAD57128E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5773F33-79E1-4BB6-B208-DF1EAD57128E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5773F33-79E1-4BB6-B208-DF1EAD57128E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5323A28A-2D56-412E-874B-EE0E4FE34BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5323A28A-2D56-412E-874B-EE0E4FE34BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5323A28A-2D56-412E-874B-EE0E4FE34BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5323A28A-2D56-412E-874B-EE0E4FE34BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

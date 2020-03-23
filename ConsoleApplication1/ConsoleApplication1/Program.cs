@@ -9,6 +9,7 @@ using Test;
 namespace CsharpTest
 {
     using CsharpBase;
+    using OutLibTest;
     class Program
     {
         static void Main(string[] args)
@@ -77,34 +78,34 @@ namespace CsharpTest
             #endregion
 
             #region 06正则表达式
-            _06RegularExpressions re = new _06RegularExpressions();
+            //_06RegularExpressions re = new _06RegularExpressions();
 
-            re.IsNumic("R1123");
-            re.IsContainNumic("R1123");
-            re.IsBeginHello("Hello cboii");
-            re.IsBeginHello("Hi cboii");
+            //re.IsNumic("R1123");
+            //re.IsContainNumic("R1123");
+            //re.IsBeginHello("Hello cboii");
+            //re.IsBeginHello("Hi cboii");
 
-            re.getLinkValue("<a href=\"http://www.baidu.com\" target=\"_blank\">百度</a>");
-            re.getLinkValue("<a href=\"     http://www.cboii.com\" target=\"_blank\">我的网站</a>");
-            re.getHeadValue("<H1>标题<H1>");
-            re.getHeadValue("<h2>小标<h2>");
-            re.getABorIJbegin("abcd");
-            re.getABorIJbegin("ab呵呵呵呵_");
-            re.getABorIJbegin("efgh");
-            re.getABorIJbegin("ijk");
-            re.getReName("张三丰");
-            re.getReName("张丰");
-            re.getReName("张飞");
-            re.getSpeicalStr("Java Asp.net SQLServer");
-            re.getSpeicalStr("C# Java");
+            //re.getLinkValue("<a href=\"http://www.baidu.com\" target=\"_blank\">百度</a>");
+            //re.getLinkValue("<a href=\"     http://www.cboii.com\" target=\"_blank\">我的网站</a>");
+            //re.getHeadValue("<H1>标题<H1>");
+            //re.getHeadValue("<h2>小标<h2>");
+            //re.getABorIJbegin("abcd");
+            //re.getABorIJbegin("ab呵呵呵呵_");
+            //re.getABorIJbegin("efgh");
+            //re.getABorIJbegin("ijk");
+            //re.getReName("张三丰");
+            //re.getReName("张丰");
+            //re.getReName("张飞");
+            //re.getSpeicalStr("Java Asp.net SQLServer");
+            //re.getSpeicalStr("C# Java");
 
-            re.greedAndLazy();
-            re.getHrefInfo();
-            re.getInfoByGroupName();
-            re.getAllHrefValue();
+            //re.greedAndLazy();
+            //re.getHrefInfo();
+            //re.getInfoByGroupName();
+            //re.getAllHrefValue();
 
-            re.replaceWords();
-            re.splitWords(); 
+            //re.replaceWords();
+            //re.splitWords();
             #endregion
 
             #region 字符串练习
@@ -195,6 +196,14 @@ namespace CsharpTest
             #endregion
 
 
+
+            #region 外部库使用Test
+            List<Result>  list = HtmlAgilityPackTest.test();
+            foreach (Result item in list)
+            {
+                Console.WriteLine(item.title);
+            }
+            #endregion
 
             Console.ReadKey();
         }
